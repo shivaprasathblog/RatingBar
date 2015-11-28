@@ -9,16 +9,18 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity 
 {
-	//Define the rating bar
+	//STEP 1 : Define the rating bar
 	RatingBar rb;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//STEP 2 : Refering the Rating bar from Layout file
 		 rb= (RatingBar)findViewById(R.id.ratingBar1);
 
-		//Set the listener and create object for rating bar
+		//STEP 3 : Set the listener and create object for rating bar
 		rb.setOnRatingBarChangeListener(new OnRatingBarChangeListener()
 		{
 		@Override
